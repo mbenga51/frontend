@@ -11,7 +11,7 @@ import {
 
 import "../css/reports.css";
 
-function Reports() {
+function UserDashboard() {
 
   // MOCK PRODUCTS
 
@@ -268,4 +268,4 @@ function Reports() {
   );
 }
 
-export default Reports;
+export default UserDashboard;
