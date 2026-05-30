@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+
+.reports-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 30px;
+
+  background: #f7f7f7;
+}
+
+/* CONTAINER */
+
+.reports-container {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.reports-header {
+  margin-bottom: 35px;
+}
+
+.reports-header h1 {
+  font-size: 38px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.reports-header p {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+/* SUMMARY */
+
+.summary-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  margin-bottom: 30px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.summary-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 28px;
+}
+
+.summary-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.export-btn {
+  border: none;
+
+  background: #020827;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.export-btn:hover {
+  opacity: 0.9;
+}
+
+/* SUMMARY GRID */
+
+.summary-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.summary-item {
+  background: #f9fafb;
+
+  border-radius: 18px;
+
+  padding: 22px;
+}
+
+.summary-item p {
+  color: #6b7280;
+
+  margin-bottom: 12px;
+
+  font-size: 15px;
+}
+
+.summary-item h2 {
+  font-size: 30px;
+
+  color: #111827;
+}
+
+/* COLORS */
+
+.green {
+  color: #16a34a;
+}
+
+.red {
+  color: #dc2626;
+}
+
+.orange {
+  color: #ea580c;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.purple {
+  color: #9333ea;
+}
+
+.indigo {
+  color: #4f46e5;
+}
+
+.teal {
+  color: #0f766e;
+}
+
+/* REPORT GRID */
+
+.reports-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 24px;
+}
+
+/* CARD */
+
+.report-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  border: 1px solid #e5e7eb;
+
+  transition: 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* HEADER */
+
+.report-header {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+.report-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f3f4f6;
+}
+
+.report-header h2 {
+  font-size: 20px;
+
+  color: #111827;
+}
+
+/* DESCRIPTION */
+
+.report-desc {
+  color: #6b7280;
+
+  line-height: 1.7;
+
+  margin-bottom: 22px;
+}
+
+/* LIST */
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: #4b5563;
+
+  padding-left: 5px;
+}
+
+/* BUTTON */
+
+.report-btn {
+  width: 100%;
+
+  border: 1px solid #d1d5db;
+
+  background: white;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.report-btn:hover {
+  background: #f9fafb;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .reports-page {
+    padding: 20px;
+  }
+
+  .reports-header h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .reports-page {
+    padding: 15px;
+  }
+
+  .reports-header h1 {
+    font-size: 28px;
+  }
+
+  .summary-card,
+  .report-card {
+    padding: 22px;
+  }
+
+  .report-header h2 {
+    font-size: 18px;
+  }
+
+  .summary-item h2 {
+    font-size: 24px;
+  }
+}
