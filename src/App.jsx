@@ -3,7 +3,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Adminlayout from './components/layout/adminLayout'
+import AdminLayout from './components/layout/AdminLayout'
 import Products from './pages/Products'
 import StockIn from './pages/Stockin'
 import StockOut from './pages/Stockout'
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          <Route path="/dashboard" element={<Adminlayout />}>
+          <Route path="/dashboard" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="products" element={<Products />} /> {/* dashboard/products*/}
             <Route path="stock-out" element={<StockOut />} /> {/* dashboard/stockout*/}
